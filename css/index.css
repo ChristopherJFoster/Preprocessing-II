@@ -188,14 +188,25 @@ header {
   padding: 24px 0;
   font-size: 1.6rem;
 }
-header .header-content {
-  width: 100%;
-  margin: 0 10%;
-  border: 1px dashed red;
-}
 header a {
   text-decoration: none;
   padding-right: 28px;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+  header nav {
+    margin-top: 20px;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
 }
 .footer {
   margin: 0 auto;
@@ -258,6 +269,7 @@ header a {
   justify-content: space-between;
 }
 .home .content-pick .destination {
+  border: 1px dashed red;
   width: 30%;
   margin-bottom: 30px;
 }
