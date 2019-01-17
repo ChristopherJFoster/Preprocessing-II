@@ -5,6 +5,9 @@
     .text {
       padding: 20px 0 10px 0;
     }
+    @media @mobile {
+      margin: 0 20px;
+    }
   }
 
   .content-section {
@@ -26,6 +29,16 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      margin: 30px 20px;
+      .text-content {
+        width: 100%;
+      }
+      .img-content {
+        width: 100%;
+      }
+    }
   }
 
   .inverse-content {
@@ -35,6 +48,7 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      order: -1;
     }
 
     .img-content {
@@ -49,6 +63,11 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+      margin: 20px;
+      width: 90%;
     }
   }
 
