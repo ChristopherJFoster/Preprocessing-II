@@ -163,27 +163,41 @@ img {
   max-width: 100%;
   height: auto;
 }
+header {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+footer {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 header {
   border-bottom: 2px dashed #c0c0c0;
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 100px;
+  padding: 24px 0;
   font-size: 1.6rem;
+}
+header .header-content {
+  width: 100%;
+  margin: 0 10%;
+  border: 1px dashed red;
 }
 header a {
   text-decoration: none;
   padding-right: 28px;
 }
 .footer {
-  max-width: 1000px;
   margin: 0 auto;
   width: 100%;
   border-top: 2px dashed silver;
@@ -250,7 +264,7 @@ header a {
 .home .content-pick .destination button {
   width: 200px;
   height: 45px;
-  background-color: teal;
+  background-color: #308f99;
   color: white;
   font-size: 1.8rem;
   border-radius: 15px;
@@ -258,5 +272,5 @@ header a {
 }
 .home .content-pick .destination button:hover {
   background-color: white;
-  color: teal;
+  color: #308f99;
 }
