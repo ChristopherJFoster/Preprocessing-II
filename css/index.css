@@ -181,6 +181,12 @@ header a {
   text-decoration: none;
   padding-right: 28px;
 }
+.welcome {
+  border-bottom: 2px dashed #c0c0c0;
+}
+.welcome .text {
+  padding: 20px 0 10px 0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
