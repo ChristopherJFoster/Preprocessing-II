@@ -1,6 +1,5 @@
 .home {
   .welcome {
-    //TK calls this the 'header'...
     border-bottom: 2px dashed @navigation-border;
     .text {
       padding: 20px 0 10px 0;
@@ -88,7 +87,7 @@
       }
     }
 
-    @media @mobile {
+    @media @tablet {
       margin: 0 20px;
       flex-direction: column;
 
@@ -96,9 +95,11 @@
         margin: 20px auto;
         padding: 0 40px;
         width: 100%;
-        button {
-          width: 100%;
-        }
+      }
+    }
+    @media @mobile {
+      button {
+        width: 100%;
       }
     }
   }

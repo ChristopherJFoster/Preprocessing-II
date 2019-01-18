@@ -45,19 +45,38 @@ img {
 }
 
 header {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+
+.header-content {
+  width: 800px;
+  max-width: 100%;
+  @media @tablet {
+    width: 95%;
+    max-width: 750px;
+  }
+  @media @mobile {
+    max-width: 450px;
+  }
 }
 
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @tablet {
+    width: 95%;
+    max-width: 750px;
+  }
+  @media @mobile {
+    max-width: 450px;
+  }
 }
 
 footer {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
