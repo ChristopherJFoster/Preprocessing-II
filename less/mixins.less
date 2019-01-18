@@ -1,1 +1,24 @@
 // Mixins in here
+
+.custom-button(@width: 50px, @height: 50px, @bcolor: white, @fcolor: black) {
+  width: @width;
+  height: @height;
+  background-color: @bcolor;
+  color: @fcolor;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @fcolor;
+    color: @bcolor;
+  }
+}
+
+// started animation mixin - might come back to it... //
+// .colorfade(@bcolor: black, @fcolor: white) {
+//     @keyframes colorfade {
+//         from {background-color: @bcolor}
+//         to (background-color: @fcolor)
+//     }
+// }
