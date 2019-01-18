@@ -48,7 +48,9 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-      order: -1;
+      @media @mobile {
+        order: -1;
+      }
     }
 
     .img-content {
@@ -78,12 +80,25 @@
     justify-content: space-between;
 
     .destination {
-      border: @rtb;
       width: 30%;
       margin-bottom: 30px;
 
       button {
         .custom-button(200px, 45px, #308f99, white);
+      }
+    }
+
+    @media @mobile {
+      margin: 0 20px;
+      flex-direction: column;
+
+      .destination {
+        margin: 20px auto;
+        padding: 0 40px;
+        width: 100%;
+        button {
+          width: 100%;
+        }
       }
     }
   }

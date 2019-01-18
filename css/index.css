@@ -266,7 +266,11 @@ header a {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
-  order: -1;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -292,7 +296,6 @@ header a {
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  border: 1px dashed red;
   width: 30%;
   margin-bottom: 30px;
 }
@@ -308,4 +311,18 @@ header a {
 .home .content-pick .destination button:hover {
   background-color: white;
   color: #308f99;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    margin: 20px auto;
+    padding: 0 40px;
+    width: 100%;
+  }
+  .home .content-pick .destination button {
+    width: 100%;
+  }
 }
